@@ -1,24 +1,14 @@
 line-bot-sdk
 pip 
-
 flask
-
-gun icorn
-
+gunicorn
 psycopg2
-
 gensim
-
 tensorflow
-
 keras
-
 scikit-learn
-
 requests
-
 numpy
-
 argparse
 
 
