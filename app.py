@@ -32,8 +32,8 @@ app = Flask(__name__)
 
 # get channel_secret and channel_access_token from your environment variable
 # change channel_secret and channel_access_token from your line developer
-channel_secret = os.getenv('14ecc05ff3b375cc00d0d58b4c8c9516', None)
-channel_access_token = os.getenv('1XFm6BIIa+h6gH1iePu+WlGq/w566t3F43cANaNtIXOw9msuw+777sdz+2mPgiN+QPKlv0362G2jGzGj0HH5Cke81dt5y8wZ8wOVtczAWkczypg2eotKpgHLGcYjqqgkhzILyH3h9UU9PAzqnAYMkQdB04t89/1O/w1cDnyilFU=', None)
+#channel_secret = os.getenv('14ecc05ff3b375cc00d0d58b4c8c9516', None)
+#channel_access_token = os.getenv('1XFm6BIIa+h6gH1iePu+WlGq/w566t3F43cANaNtIXOw9msuw+777sdz+2mPgiN+QPKlv0362G2jGzGj0HH5Cke81dt5y8wZ8wOVtczAWkczypg2eotKpgHLGcYjqqgkhzILyH3h9UU9PAzqnAYMkQdB04t89/1O/w1cDnyilFU=', None)
 if channel_secret is None:
     print('Specify LINE_CHANNEL_SECRET as environment variable.')
     sys.exit(1)
@@ -41,8 +41,12 @@ if channel_access_token is None:
     print('Specify LINE_CHANNEL_ACCESS_TOKEN as environment variable.')
     sys.exit(1)
 
-line_bot_api = LineBotApi(channel_access_token)
-handler = WebhookHandler(channel_secret)
+#line_bot_api = LineBotApi(channel_access_token)
+#handler = WebhookHandler(channel_secret)
+
+
+line_bot_api = LineBotApi('1XFm6BIIa+h6gH1iePu+WlGq/w566t3F43cANaNtIXOw9msuw+777sdz+2mPgiN+QPKlv0362G2jGzGj0HH5Cke81dt5y8wZ8wOVtczAWkczypg2eotKpgHLGcYjqqgkhzILyH3h9UU9PAzqnAYMkQdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('14ecc05ff3b375cc00d0d58b4c8c9516')
 
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 
