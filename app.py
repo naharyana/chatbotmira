@@ -39,8 +39,8 @@ app = Flask(__name__)
 #handler = WebhookHandler(channel_secret)
 
 
-line_bot_api = LineBotApi('1XFm6BIIa+h6gH1iePu+WlGq/w566t3F43cANaNtIXOw9msuw+777sdz+2mPgiN+QPKlv0362G2jGzGj0HH5Cke81dt5y8wZ8wOVtczAWkczypg2eotKpgHLGcYjqqgkhzILyH3h9UU9PAzqnAYMkQdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('14ecc05ff3b375cc00d0d58b4c8c9516')
+line_bot_api = LineBotApi('fvNBwqXlnXfcjhqI+VThllaGNAHmT4LtNDIYhU6gSegnhqSoQ86EYAIhVXE1FXwIR63enHaYMIHi9CeN/GlS4BTEMMFMqTnZ7JLR4L9aV/gsFqSomT+1ltqGP6oss95I9pkGU/sCw3hbc90+kczy/AdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('0ad1dab7e8c688a00a4a7f3b46bff6d3')
 
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 
